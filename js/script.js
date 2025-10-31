@@ -6,6 +6,10 @@ $(window).on('load', function () {
     activate: function (event, ui) {
       // Refresh the slider when switching tabs
       ui.newPanel.find('.ts-1-slider').slick('setPosition');
+
+      // 🟢 Update heading text when tab is activated
+      const activeText = ui.newTab.find('a').text().replace(/["']/g, '').trim();
+      $('.hp-sec-3 .hp-nba-h').text(activeText);
     },
   });
 
@@ -16,6 +20,13 @@ $(window).on('load', function () {
 
   // Show tabs only after everything is ready
   $('.hp-sec-3-r2 #tabs').addClass('tabs-ready');
+
+  // Trigger update for the first tab on load
+  const firstTabText = $('.hp-sec-3-r2 #tabs ul li:first-child a')
+    .text()
+    .replace(/["']/g, '')
+    .trim();
+  $('.hp-sec-3 .hp-nba-h').text(firstTabText);
 
   // ==========================
   // Section 7 Tabs (Duplicate)
