@@ -1,6 +1,17 @@
 @media (max-width:1920px) {}
 
-@media (max-width:1668px) {}
+@media (max-width:1668px) {
+    .hp-sec-10-r1 {
+        max-width: 1740px;
+        margin: 0 auto;
+        padding: 0 0 0 50px;
+    }
+
+    .hp-sec-10 .hp-sec-10-r1>div {
+        width: 50%;
+        position: relative;
+    }
+}
 
 @media (max-width:1540px) {}
 
@@ -12,9 +23,31 @@
     .header-r3 .header-r3-right {
         gap: 15px;
     }
+
+    .ts-1-slider .slick-prev {
+        left: 87%;
+    }
+
+    .hp-sec-17-r1 .hp-sec-17-r1-card .hp-sec-17-r1-card-tag {
+        width: 90px;
+        height: 90px;
+    }
+
+    .hp-sec-17-r1 .hp-sec-17-r1-card .hp-sec-17-r1-card-content {
+        padding: 25px;
+    }
+
+    .hp-sec-17-r1 .hp-sec-17-r1-card .hp-sec-17-r1-card-tag {
+        bottom: 25px;
+        left: 30px;
+    }
 }
 
-@media (max-width:1368px) {}
+@media (max-width:1368px) {
+    .header-r3 .header-r3-right {
+        padding: 14px 15px 12px 15px;
+    }
+}
 
 @media (max-width:1280px) {
 
@@ -25,6 +58,24 @@
 
     .header-r2 .header-r2-right {
         width: 30%;
+    }
+
+    .foot-exclusive {
+        width: 438px;
+        width: 45% !important;
+    }
+
+    .footer-col {
+        width: 15%;
+    }
+
+    .footer-r1 {
+        justify-content: flex-start;
+    }
+
+    .footer-col.foot-support {
+        width: 45% !important;
+        max-width: 100%;
     }
 }
 
@@ -80,6 +131,52 @@
     .header-r2-right .user-dets {
         margin-left: 15px;
     }
+
+    .footer-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+    }
+
+    .footer-col ul {
+        display: none;
+    }
+
+    .footer-col.static ul {
+        display: flex !important;
+    }
+
+    .footer-col h4.footer-toggle::after {
+        display: block;
+    }
+
+    .footer-col.active ul {
+        display: flex;
+    }
+
+    .footer-col h4.footer-toggle::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        transition: transform 0.3s;
+        background-image: url('../images/icons/angle-down.svg');
+        content: '';
+        position: absolute;
+        right: 0;
+        transition: transform 0.3s;
+        z-index: 111;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 10px;
+        width: 18px;
+    }
+
+    .footer-col.active h4.footer-toggle::after {
+        transform: rotate(179deg);
+    }
 }
 
 @media (min-width: 1025px) {}
@@ -103,6 +200,10 @@
     .dropdown-container,
     .icon-button {
         /* display: none; */
+    }
+
+    .footer-r1 {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -7,6 +7,10 @@ $(window).on('load', function () {
       // Refresh the slider when switching tabs
       ui.newPanel.find('.ts-1-slider').slick('setPosition');
 
+      // Smooth transition
+      ui.newPanel.addClass('tabs-active');
+      ui.oldPanel.removeClass('tabs-active');
+
       // 🟢 Update heading text when tab is activated
       const activeText = ui.newTab.find('a').text().replace(/["']/g, '').trim();
       $('.hp-sec-3 .hp-nba-h').text(activeText);
@@ -28,13 +32,20 @@ $(window).on('load', function () {
     .trim();
   $('.hp-sec-3 .hp-nba-h').text(firstTabText);
 
+  // Add transition class to first panel
+  $('.hp-sec-3-r2 #tabs .ui-tabs-panel:first').addClass('tabs-active');
+
   // ==========================
-  // Section 7 Tabs (Duplicate)
+  // Section 7 Tabs
   // ==========================
   const $tabs7 = $('.hp-sec-7-r2 #tabs').tabs({
     activate: function (event, ui) {
       // Refresh the slider when switching tabs
       ui.newPanel.find('.ts-1-slider').slick('setPosition');
+
+      // Smooth transition
+      ui.newPanel.addClass('tabs-active');
+      ui.oldPanel.removeClass('tabs-active');
     },
   });
 
@@ -45,9 +56,60 @@ $(window).on('load', function () {
 
   // Show tabs only after everything is ready
   $('.hp-sec-7-r2 #tabs').addClass('tabs-ready');
-});
 
-// function toggleMenu() {
-//   const menu = document.getElementById('menuList');
-//   menu.classList.toggle('show');
-// }
+  // Add transition class to first panel
+  $('.hp-sec-7-r2 #tabs .ui-tabs-panel:first').addClass('tabs-active');
+
+  // ==========================
+  // Footer Accordion
+  // ==========================
+  function setupFooterAccordion() {
+    if ($(window).width() <= 1024) {
+      // Enable accordion only on smaller screens
+      $('.footer-col').each(function (index) {
+        if (index > 0 && index < 5) {
+          // skip first & last
+          const $col = $(this);
+          const $toggle = $col.find('.footer-toggle');
+          const $panel = $col.find('ul');
+
+          // Remove previous handlers
+          $toggle.off('click.accordion').on('click.accordion', function (e) {
+            e.preventDefault();
+
+            // Close other open panels
+            $('.footer-col.active')
+              .not($col)
+              .removeClass('active')
+              .find('ul')
+              .slideUp(250);
+
+            // Toggle this one
+            if ($col.hasClass('active')) {
+              $panel.slideUp(250, function () {
+                $col.removeClass('active');
+              });
+            } else {
+              $panel.slideDown(250, function () {
+                $col.addClass('active');
+              });
+            }
+          });
+        }
+      });
+    } else {
+      // Show all on large screens
+      $('.footer-col ul').show();
+      $('.footer-col').removeClass('active');
+      $('.footer-toggle').off('click.accordion');
+    }
+  }
+
+  // Run once on load
+  setupFooterAccordion();
+
+  // Re-run on resize
+  $(window).on('resize', function () {
+    setupFooterAccordion();
+  });
+});

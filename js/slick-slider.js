@@ -44,7 +44,7 @@ $(document).ready(function () {
 
   $ts1slider.slick({
     infinite: true,
-    slidesPerRow: 2,   
+    slidesPerRow: 2,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     responsive: [
       {
-        breakpoint: 1540,
+        breakpoint: 1440,
         settings: {
           slidesToShow: 2,
         },
@@ -102,53 +102,51 @@ $(document).ready(function () {
     ],
   });
 
-
-    // sec 7 tab 1 slider
+  // sec 7 tab 1 slider
   // init only section 7 slider
-const $ts7slider = $('.hp-sec-7-r2 .ts-1-slider');
+  const $ts7slider = $('.hp-sec-7-r2 .ts-1-slider');
 
-$ts7slider.slick({
-  infinite: true,
-  rows: 2,
-  slidesPerRow: 4,   // number of items per row
-  slidesToShow: 1,   // IMPORTANT: leave this at 1 when using slidesPerRow
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000000,
-  speed: 600,
-  arrows: true,
-  pauseOnHover: true,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 1540,
-      settings: {
-        slidesPerRow: 3,
-        rows: 2,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesPerRow: 2,
-        rows: 2,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesPerRow: 1,
-        rows: 2,
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+  $ts7slider.slick({
+    infinite: true,
+    rows: 2,
+    slidesPerRow: 4, // number of items per row
+    slidesToShow: 1, // IMPORTANT: leave this at 1 when using slidesPerRow
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000000,
+    speed: 600,
+    arrows: true,
+    pauseOnHover: true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1540,
+        settings: {
+          slidesPerRow: 3,
+          rows: 2,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesPerRow: 2,
+          rows: 2,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesPerRow: 1,
+          rows: 2,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 
-// if slider was already initialized and you changed CSS, refresh
-$ts7slider.slick('setPosition');
-$ts7slider.slick('refresh');
-
+  // if slider was already initialized and you changed CSS, refresh
+  $ts7slider.slick('setPosition');
+  $ts7slider.slick('refresh');
 });
