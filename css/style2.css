@@ -1,0 +1,371 @@
+body article.post,
+body article.page {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+body #bwg_container1_0 #bwg_container2_0 #spider_popup_overlay_0 {
+    background-color: transparent !important;
+    opacity: 0;
+}
+
+body .bwg_loading_div_2,
+body .bwg_loading_div_3,
+body .bwg_loading_div_4,
+body .bwg_loading_div_5,
+body .bwg_loading_div_6,
+body .bwg_loading_div_7,
+body .bwg_loading_div_8,
+body .bwg_loading_div_9,
+body .bwg_loading_div_10,
+body .bwg_loading_div_11,
+body .bwg_loading_div_12,
+body .bwg_loading_div_13,
+body .bwg_loading_div_14,
+body .bwg_loading_div_15,
+body .bwg_loading_div_16,
+body .bwg_loading_div_17,
+body .bwg_loading_div_18,
+body .bwg_loading_div_19,
+body .bwg_loading_div_20 {
+    background-color: #fcfcfc;
+    opacity: 100;
+    padding: 10px 0px;
+}
+
+body .bwg_load_more_ajax_loading {
+    height: 45px;
+}
+
+body .video-container video {
+    width: calc(33.33% - 20px);
+}
+
+body .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+article#post-318 h1.entry-title,
+article#post-121 h1.entry-title,
+article#post-1255 h1.entry-title,
+article#post-91 h1.entry-title {
+    display: none;
+}
+
+body .home-heading {
+    line-height: 0.944em;
+    margin: 0 0 25px 0;
+}
+
+body .wedding-venue-column {
+    margin: 0 !important;
+}
+
+a.bwg-a.bwg_load_btn,
+.video-container a#loadMore {
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    background: #BD8556FF !important;
+    color: #e2e2e2 !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    display: inline-block;
+    font-family: inherit !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+body .home-gallery-hide {
+    display: none;
+}
+
+#masthead .hgroup #header-sidebar {
+    align-items: center;
+}
+
+article#post-372 .entry-main .entry-content h2 {
+    margin: 0 !important;
+}
+
+figure.event-gallery {
+    gap: 30px !important;
+    margin-top: 30px;
+}
+
+figure.event-gallery figure {
+    width: calc(33.33% - 20px) !important;
+}
+
+figure.community-event-gallery figure {
+    max-width: 500px !important;
+}
+
+figure.home-gallery {
+    gap: 20px !important;
+}
+
+figure.home-gallery figure {
+    width: calc(25% - 20px) !important;
+}
+
+figure.home-gallery figure:last-child {
+    max-width: calc(25% - 15px) !important;
+}
+
+footer#colophon div#footer-widgets aside#custom_html-3 {
+    padding: 0;
+}
+
+footer#colophon div#site-info,
+footer#colophon div#theme-attribution {
+    display: none !important;
+}
+
+footer#colophon .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-content .footer-social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content .footer-social-icon a img {
+    width: 40px;
+}
+
+article#post-318 .entry-main .entry-content div#gallery-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article#post-318 .entry-main .entry-content div#gallery-1 dl.gallery-item {
+    width: calc(25% - 20px);
+}
+
+article#post-318 .entry-main .entry-content div#gallery-1 dl.gallery-item dt a img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-id-382 #main {
+    min-height: 53vh !important;
+    display: flex;
+    display: flex !important;
+    align-items: center;
+    align-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    #masthead .hgroup #header-sidebar {
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 1025px) {
+    .main-navigation ul li a {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body .wedding-venue-column {
+        flex-direction: column-reverse;
+    }
+
+    figure.event-gallery {
+        gap: 10px !important;
+    }
+
+    figure.home-gallery {
+        gap: 10px !important;
+    }
+
+    figure.home-gallery figure {
+        width: calc(33.33% - 20px) !important;
+    }
+
+    figure.home-gallery figure:last-child {
+        max-width: calc(33.33% - 7px) !important;
+    }
+
+    body .video-container {
+        gap: 10px;
+    }
+
+    body .video-container video {
+        width: calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 767px) {
+    body .widget_headline-widget .decoration {
+        margin: 6px 10px;
+    }
+
+    body article.post,
+    body article.page {
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    body.page-id-372 h2.wp-block-heading {
+        font-size: 30px !important;
+        line-height: 1.3em;
+    }
+
+    body .video-container {
+        gap: 10px;
+    }
+
+    body .video-container video {
+        width: calc(33.33% - 10px);
+    }
+
+    figure.event-gallery figure {
+        width: calc(50% - 20px) !important;
+    }
+
+    figure.home-gallery figure {
+        width: calc(50% - 20px) !important;
+    }
+
+    figure.home-gallery figure:last-child {
+        max-width: none !important;
+    }
+
+    footer#colophon .footer-content {
+        flex-direction: column;
+    }
+
+    article#post-7 .entry-main .entry-content figure.wp-block-image {
+        text-align: center;
+    }
+}
+
+@media (max-width: 680px) {
+    div#header-sidebar aside#vantage-social-media-3 {
+        display: flex !important;
+        gap: 10px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    body .video-container {
+        gap: 10px;
+    }
+
+    body .video-container video {
+        width: 100%;
+    }
+}
+
+.flexslider {
+
+    display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .main-navigation ul li a {
+        padding: 20px 29px;
+    }
+
+    .home .wp-block-image .alignright {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #gallery-1 .gallery-item a {
+
+        padding: 7px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body.page-template-default.page.page-id-23.logged-in.admin-bar.wp-custom-logo.responsive.layout-full.has-sidebar.has-menu-search.page-layout-default.sidebar-position-none.mobilenav.customize-support.vantage-sticky-menu.sticky-menu {}
+
+    .page-id-23 div#main {
+        padding: 0;
+    }
+
+    .page-id-23 div#main div#seed-csp4-page {
+        padding: 0 35px;
+    }
+
+    .page-id-23 div#main header.entry-header {
+        padding: 10px 35px;
+    }
+
+    .page-id-23 div#main h2 {
+        padding: 0 35px;
+    }
+
+    .page-id-372 div#main {
+        padding: 0;
+    }
+
+    .page-id-372 div#main h2 {
+        padding: 0px 35px;
+    }
+
+    .page-id-372 div#main figure.aligncenter.size-full.is-resized {
+        padding: 0 35px;
+    }
+
+    #gallery-1 br {
+        display: none;
+    }
+
+    #gallery-1 .gallery-item {
+        width: 33%;
+    }
+
+    #masthead .hgroup h1 {
+        font-size: 25px;
+    }
+
+    body .widget_headline-widget h3 {
+        font-size: 13px;
+    }
+
+    body.responsive #masthead .hgroup .logo img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+
+    body.responsive #masthead .hgroup .widget_vantage-social-media a {
+        height: 30px;
+        width: 30px;
+    }
+
+    body.responsive #masthead .hgroup .widget_vantage-social-media a span {
+        font-size: 14px;
+    }
+
+
+    .logo-wrapper {
+        display: none;
+    }
+
+}
+
+@media (max-width: 505px) {
+    body article#post-121 .entry-main .entry-content .wedding-venue-column .wp-block-column a:last-child {
+        display: inline;
+    }
+}

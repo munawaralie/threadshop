@@ -367,6 +367,7 @@ section {
 .hp-sec-1-r1 {
     display: flex;
     position: relative;
+    max-height: 600px;
 }
 
 .hp-sec-1-r1 .hp-sec-1-left,
@@ -441,6 +442,14 @@ section {
     padding-bottom: 80px;
 }
 
+.slick-slider {
+    position: relative;
+}
+
+.hp-category-slider {
+    position: relative;
+
+}
 
 .hp-category-slider .slide {
     /* height: 333px; */
@@ -1319,9 +1328,20 @@ a.ui-button:active,
 .hp-sec-8 .hp-sec-8-r1>div .hp-sec-8-content {
     position: absolute;
     width: 100%;
-    bottom: 57px;
+    height: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 57px;
     color: #fff;
     text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.28%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.hp-sec-10 .hp-sec-10-r1-right {
+    max-height: 600px;
 }
 
 .hp-sec-10 .hp-sec-10-r1>div .hp-sec-10-content {
@@ -1393,6 +1413,7 @@ a.ui-button:active,
     border-radius: 6px;
     overflow: hidden;
     position: relative;
+    min-height: 375px;
 }
 
 .hp-sec-11-r2 .hp-sec-11-r2-card>img {
@@ -1403,10 +1424,15 @@ a.ui-button:active,
 
 .hp-sec-11-r2 .hp-sec-11-r2-card .hp-sec-11-r2-content {
     position: absolute;
+    height: 100%;
     width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.17%, rgba(0, 0, 0, 0.6) 100%);
     bottom: 0%;
     left: 0%;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .hp-sec-11-r2 .hp-sec-11-r2-card .hp-sec-11-r2-content h3,
@@ -1470,6 +1496,11 @@ a.ui-button:active,
 /* .hp-sec-11-r3-card>img:hover {
     filter: grayscale(100%);
 } */
+.hp-sec-11-r3-card img:hover {
+    filter: grayscale(50%) !important;
+    transition: filter 0.3s ease;
+    /* smooth effect */
+}
 
 .hp-sec-13 .hp-sec-13-r1 {
     /* height: 460px; */
