@@ -89,7 +89,7 @@ h4 {
 }
 
 h1 {
-    font-size: clamp(43px, 5vw, 64px);
+    font-size: clamp(42px, 5vw, 64px);
     line-height: 100%;
 }
 
@@ -332,6 +332,7 @@ section {
     padding-top: 19px;
     padding-bottom: 18px;
     display: inline-block;
+    width: 100%;
 }
 
 .header-r3-left .header-r3-nav ul {
@@ -404,6 +405,7 @@ section {
     text-align: center;
     margin-bottom: 17px;
     max-width: 584px;
+    line-height: 1.4em;
 }
 
 .hp-sec-1 .explore-btn,

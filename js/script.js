@@ -112,4 +112,43 @@ $(window).on('load', function () {
   $(window).on('resize', function () {
     setupFooterAccordion();
   });
+
+  // ==========================
+  // Mobile Navigation Toggle
+  // ==========================
+  const mobileNavHandler = function () {
+    // Check if the current window width is less than 768 pixels
+    if (window.innerWidth < 768) {
+      // Check if the handler is not already bound to prevent multiple bindings
+      if (!$('.nav-toggler').data('mobile-bound')) {
+        // Attach the click handler
+        $('.nav-toggler').on('click.mobileToggle', function () {
+          const $menu = $('.header-r3-nav ul');
+          $menu.slideToggle('slow').toggleClass('menu-open'); // 🔹 Added toggle class
+        });
+        // Set a flag to remember the handler is bound
+        $('.nav-toggler').data('mobile-bound', true);
+      }
+    } else {
+      // Remove the click handler if the screen is 768px or wider
+      $('.nav-toggler').off('click.mobileToggle');
+      // Remove the flag
+      $('.nav-toggler').data('mobile-bound', false);
+      // Optional: Ensure the menu is always visible on larger screens
+      $('.header-r3-nav ul')
+        .removeClass('menu-open') // 🔹 Remove class on desktop
+        .css('display', ''); // Clears inline 'display: none'
+    }
+  };
+
+  // 2. Run the function on initial page load
+  mobileNavHandler();
+
+  // 3. Run the function when the window is resized
+  // Using a simple debounce to avoid running the function too many times while resizing
+  let resizeTimer;
+  $(window).on('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(mobileNavHandler, 100);
+  });
 });

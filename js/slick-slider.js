@@ -122,6 +122,20 @@ $(document).ready(function () {
           arrows: false,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2.1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.05,
+          arrows: false,
+        },
+      },
     ],
   });
 
